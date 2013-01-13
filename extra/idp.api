@@ -1,0 +1,141 @@
+BELOCK
+BUF_LENGTH
+COMMON_REC_ROWS
+DFT_ERR_LEN
+FILE_MODE
+IDP_CONFIG_H
+IDP_LOG
+IDP_LOG_MSG_SIZE
+IDP_LOG_PRIORITY
+IDP_LOG_PRIORITY_DEBUG
+IDP_LOG_PRIORITY_ERROR
+IDP_LOG_PRIORITY_INFO
+IDP_LOG_PRIORITY_TRACE
+IDP_LOG_PRIORITY_WARN
+LEAST_PACK_LEN
+MAIN_INC
+MAXLEN
+MAX_ALLOC_ROWS
+MAX_RECORD_NUM
+NODE_ERR_001
+NODE_ERR_002
+NODE_ERR_003
+NODE_ERR_004
+NOTFOUND
+NUM_LEN
+OVER_FLAG
+PACK_GEN_FUN
+PSVC
+PSVC_PACK
+PSVC_REC
+READTAGS_H
+RET_LENGTH
+ROW_BUF_ENOUGH
+ROW_EXCEED
+SELECT_NULL_VALUE
+SERV_ERR_001
+SERV_ERR_002
+SERV_ERR_003
+SERV_ERR_004
+SERV_ERR_1000
+SERV_ERR_1001
+SERV_ERR_1002
+SERV_ERR_1003
+SERV_ERR_1004
+SERV_ERR_1005
+SERV_ERR_1006
+SERV_ERR_1007
+SJKBM_LEN
+SVC_DECL
+SVC_NAME_LEN
+SVC_REC
+S_ERR
+S_OK
+TAG_FOLDSORTED
+TAG_FULLMATCH
+TAG_IGNORECASE
+TAG_OBSERVECASE
+TAG_PARTIALMATCH
+TAG_SORTED
+TAG_UNSORTED
+TDPDM_CUR_FIELD
+TDPDM_CUR_TABLE
+TIDP_CONTEXT
+TKSQL_MAP
+TagFailure
+TagSuccess
+UNPACK_GEN_FUN
+clean_error()
+clr_fl(int fd, int flags)
+dest_fifo_pair(fifo_pair_t *pair)
+fifo_pair_t
+get_last_error()
+idp_call(TIDP_CONTEXT* context)
+idp_check_str_is_word(const char * str0, ...)
+idp_context
+idp_db_connect(const char* connect_string, char * _TimeBuf)
+idp_db_exec_sql(const char * sql_cmd, int *influenced_rows)
+idp_db_get_last_error()
+idp_db_insert_by_data(const int ins_rows, void * ins_data , const char* block,const char *table, int *influenced_rows)
+idp_db_insert_by_sql(int ins_rows, const char *block, const char* sql_cmd, int *influenced_rows)
+idp_db_select_dynamic(int * ret_rows, const char* block, const char* sql_cmd, void ** ret_data)
+idp_db_select_fixed(const int max_page_rows, int start_page_offset, int * ret_rows, int * rows_count, const char* block, const char* sql_cmd, void * ret_data)
+idp_db_set_qmap(const TKSQL_MAP * assign_map)
+idp_db_update_by_data(const int upd_rows, void* upd_data, const char* block, const char *table, int *influenced_rows)
+idp_db_update_by_sql(int upd_rows, const char *block, const char* sql_cmd, int *influenced_rows)
+idp_get_build_rev(int rev_format)
+idp_get_conf(const char *conf_file_name,const char *key_path)
+idp_get_conf_val(const char *conf_value_key_name)
+idp_get_dbguid(char * guid_ret)
+idp_get_file_md5sum(const char * filename, char* md5_digest)
+idp_get_fmt_str(const char * fmt, ...)
+idp_get_guid(char * guid)
+idp_get_hmac_md5(const char* text, const char* key, char* md5_digest)
+idp_get_log_client_conf(const char* conf_file_name)//获取日志客户端配置
+idp_get_log_server_conf(const char* conf_file_name)//获取日志服务器端配置
+idp_get_md5sum(const char *data_buf, size_t data_len, char* md5_digest)
+idp_get_so(pid_t pid, const char* so_name, char* so_file_name, size_t so_name_size)
+idp_get_str_by_sql(char * str_ret, const int ret_len, const char * sql_cmd)
+idp_get_str_by_system(char * str_ret, const int ret_len, const char * cmd)
+idp_log(const char* log)//默认优先级打日志
+idp_log_close()
+idp_log_debug
+idp_log_error
+idp_log_info
+idp_log_open()
+idp_log_trace
+idp_log_warn
+idp_pack_packet(const int scan_order, const int prot_order, const int pack_order, const int num_len, const int min_pack_num, const int max_pack_num, int * offset_pack, int pack_num, void **pack_malloc, void *pack_data, const int packet_struct_size, const int packet_len, PACK_GEN_FUN pack_fun)
+idp_pub_check(int x, const int size, ...)
+idp_set_conf_val(const char *conf_value_key, const char *value)
+idp_unpack_packet(const int scan_order, const int prot_order, const int unpack_order, const int num_len, const int min_pack_num, const int max_pack_num, int * offset_unpack, int * pack_num, void ** unpack_malloc, const char* pack_loc, const int packet_struct_size, const int packet_len, UNPACK_GEN_FUN unpack_fun)
+init_fifo_pair(const char *base, long suffix, fifo_pair_t *pair)
+init_idp_log()//初始化后台日志
+on_error(const char *format, ... )
+on_error(const char *format, ...)
+p_FillErrorInfo
+p_FillErrorInfoEx
+p_Public_GetYWRQ(const char *_timebuf)
+p_Public_GetYWSJ(const char *_timebuf)
+pmsRealloc(char **ppcBuffer, int iNewSize, int iOldSize)
+readline(int fd, char *buffer, size_t buffer_size)
+set_fl(int fd, int flags)
+sortType
+state_t
+strlcat(char* dst, const char* src, size_t siz )
+strlcpy(char *dst, const char *src, size_t siz )
+tagEntry
+tagExtensionField
+tagFile
+tagFileInfo
+tagResult
+tagsClose(tagFile *const file)
+tagsField(const tagEntry *const entry, const char *const key)
+tagsFind(tagFile *const file, tagEntry *const entry, const char *const name, const int options)
+tagsFindNext(tagFile *const file, tagEntry *const entry)
+tagsFirst(tagFile *const file, tagEntry *const entry)
+tagsNext(tagFile *const file, tagEntry *const entry)
+tagsOpen(const char *const filePath, tagFileInfo *const info)
+tagsSetSortType(tagFile *const file, const sortType type)
+userlog(char *format, ...)
+wait_on_fd(int sockfd, int for_what, long timeout)
